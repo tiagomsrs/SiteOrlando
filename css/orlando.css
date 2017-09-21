@@ -1,0 +1,150 @@
+@fonte-face{
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em; /*medida em é relativa e se ajusta automaticamente*/
+}
+
+header{
+	width: 100%;
+	height: 150px;
+	background-color: #5E299A;
+}
+
+header .container{  /*qualquer classe container dentro de uma tag header vai ganhar este estilo*/
+	/*color: #FFF; /*color altera a cor da fonte
+	background-color: #666;*/
+	position: relative;
+}
+
+header .header-black{  /*qualquer classe container dentro de uma tag header vai ganhar este estilo*/
+	width: 100%;
+	height: 40px;
+	background-color: #000;
+}
+
+header .header-black li{ /*todos os li dentro da classe header-black dentro de um header vão receber estas características*/
+	background-image: url("../img/clubs.png");
+	background-repeat: no-repeat;
+	display: inline-block; /*pelo jeito é para trocar para horizontal*/
+	margin: 4px 4px;
+}
+
+header .header-black li.club-01{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: 0px 0px;
+}
+
+header .header-black li.club-02{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -48px 0px;
+}
+
+header .header-black li.club-03{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -96px 0px;
+}
+
+header .header-black li.club-04{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -140px 0px;
+}
+
+header .header-black li.club-05{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -190px 0px;
+}
+
+header .header-black li.club-06{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -240px 0px;
+}
+
+header .header-black li.club-07{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -287px 0px;
+}
+
+header .header-black li.club-08{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -334px 0px;
+}
+
+header .header-black li.club-09{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -382px 0px;
+}
+
+header .header-black li.club-10{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -430px 0px;
+}
+
+header .header-black li.club-11{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -480px 0px;
+}
+
+header .header-black li.club-12{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -528px 0px;
+}
+
+header .header-black li.club-13{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -576px 0px;
+}
+
+header .header-black li.club-14{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -624px 0px;
+}
+
+header .header-black li.club-15{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -672px 0px;
+}
+
+header .header-black li.club-16{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -720px 0px;
+}
+
+header .header-black li.club-17{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -764px 0px;
+}
+
+header .header-black li.club-18{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -809px 0px;
+}
+
+header .header-black li.club-19{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -858px 0px;
+}
+
+header .header-black li.club-20{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -907px 0px;
+}
+
+header .header-black li.club-21{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -949px 0px;
+}
+
+
+header .header-black li.club-22{ /*uso o ponto porque ele está dentro da tag li e não é filho dela*/
+	background-position: -1000 0px;
+}
+
+header .header-black li a{ /*todos os li dentro da classe header-black dentro de um header vão receber estas características*/
+	width: 32px;
+	height: 32px; /*o padrão do li é vertical*/
+	display: inline-block; /*pelo jeito é para trocar para horizontal*/
+}
+
+#menu li{ /*todos os li dentro da classe header-black dentro de um header vão receber estas características*/
+	right: 0;
+	display: inline;	
+}
+
+#menu {
+	font-family: "OpenSans";
+	color: #FFF;
+	margin: 26px 0;
+	position: absolute;
+	right: 0;
+}
+
+#menu li a{
+	
+	font-size: 16px;
+	padding: 10px 25px;
+}
+
+header #logotipo{
+	position: absolute;
+	top: 20px;	
+	left: -80px;
+}
