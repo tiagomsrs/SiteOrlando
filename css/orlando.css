@@ -1,13 +1,21 @@
-@fonte-face{
+@font-face{
 	font-family: 'OpenSans';
 	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em; /*medida em é relativa e se ajusta automaticamente*/
+}
+
+@font-face{
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
 	font-size: 1em; /*medida em é relativa e se ajusta automaticamente*/
 }
 
 header{
 	width: 100%;
 	height: 150px;
-	background-color: #5E299A;
+	background-color: rgba(94,41,154,0.8);
+	z-index: 2;
+	position: relative;
 }
 
 header .container{  /*qualquer classe container dentro de uma tag header vai ganhar este estilo*/
@@ -125,26 +133,150 @@ header .header-black li a{ /*todos os li dentro da classe header-black dentro de
 }
 
 #menu li{ /*todos os li dentro da classe header-black dentro de um header vão receber estas características*/
-	right: 0;
-	display: inline;	
+	display: inline-block;
+	font-family: "OpenSans";	
+}
+
+#menu li.search{
+	width: 182px;	
+}
+
+#menu li.search input {
+	background-color: #8C1BC9;
+	border: none;
+	height: 30px;
+	line-height: 33px;
+}
+
+#menu li.search ::-webkit-input-placeholder{
+	color: #FFF;
+}
+
+#menu li.search button{
+	background: none;
+	border: none;	
+	position: absolute;
+	right: 3px;
+	top: -4px;
+}
+
+#menu li.search button i {
+	font-size: 14px;
+	color: rgba(255,255,255,0.5);
 }
 
 #menu {
 	font-family: "OpenSans";
 	color: #FFF;
-	margin: 26px 0;
+	margin: 36px 0;
 	position: absolute;
 	right: 0;
 }
 
 #menu li a{
-	
+	color: #FFF;
 	font-size: 16px;
 	padding: 10px 25px;
+	font-weight: bold;	
 }
 
 header #logotipo{
 	position: absolute;
 	top: 20px;	
 	left: -80px;
+}
+
+#menu li.search .input-group{
+	top: 0px;
+}
+
+#banner {
+	width: 100%;
+	height: 728px;
+	position: relative;
+	background: url("../img/banner.jpg") no-repeat;
+	background-size: cover;
+	top: -214px;
+}
+
+#banner h1 {
+	color: #FFF;
+	top: 320px;
+	position: relative;;
+	font-size: 92px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.45); /*pra dar um efeito de sombra*/
+	font-family: 'OpenSans-Light';
+	margin-left: 50px;
+}
+
+#banner h1 small{
+	font-size: 32px;
+	display: block;	/*ficar alinhado em modo bloco*/
+	color: #FFF;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#news {
+	position: relative;
+	top: -90px;	
+
+}
+
+#news h2 {
+	color: #5E299A;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -90px;
+}
+
+#news hr {
+	border: #FDE192 solid 2px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#news .thumbnails {
+	margin-top: 20px;	
+	position: relative;
+
+}
+
+#news .thumbnails h3 {
+	color: #5E299A;
+	font-size: 18px;
+	font-family: 'Open_Sans';
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#news .thumbnails time {
+	color: #A7A7A7;
+	font-size: 18px;
+	font-family: 'Open_Sans';
+	font-weight: bold;
+}
+
+#estatisticas {
+	background-color: #5E299A;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+
+#estatisticas p{
+	color: #FDE092;
+	text-transform: uppercase;
+	font-family: 'OpenSans';
+	font-size: 64px;	
+	margin-top: 36px;
+}
+
+#estatisticas p small{
+	color: #FFF;	
+	font-size: 24px;	
+	display: block;
 }
